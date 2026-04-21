@@ -7,7 +7,8 @@
 # --- Install Amdahl (run once after file transfer exercise) ---
 cd ~/amdahl
 module purge
-module load Python
+module load cray-python/3.11.7
+module load libfabric/1.22.0
 python3 -m pip install --user .
 
 # Add ~/.local/bin to PATH if needed

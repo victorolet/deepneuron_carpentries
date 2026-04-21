@@ -60,8 +60,8 @@ Replace `couxxx` with your actual username. You should see a login banner and a 
 Once connected:
 
 ```bash
-git clone https://github.com/YOUR-ORG/hpc-workshop.git
-cd hpc-workshop
+git clone https://github.com/victorolet/deepneuron_carpentries.git
+cd deepneuron_carpentries
 ```
 
 ---

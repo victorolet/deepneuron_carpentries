@@ -18,6 +18,7 @@
 #SBATCH -n 2                  # request 2 tasks to make SLURM_NTASKS interesting
 #SBATCH -t 00:01:00
 #SBATCH -p work
+#SBATCH --reservation=DeepNeuron # reservation
 #SBATCH -o slurm-%j.out
 #SBATCH -e slurm-%j.err
 

@@ -19,6 +19,7 @@
 #SBATCH -n 4                  # <-- CHANGE THIS: try 1, 2, 4, 8
 #SBATCH -t 00:02:00
 #SBATCH -p work
+#SBATCH --reservation=DeepNeuron # reservation
 #SBATCH -o scale-n%t-%j.out   # %t = ntasks, %j = job ID
 #SBATCH -e scale-n%t-%j.err
 

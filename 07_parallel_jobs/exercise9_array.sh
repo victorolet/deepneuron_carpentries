@@ -18,6 +18,7 @@
 #SBATCH -n 8                  # maximum tasks needed (Slurm uses --array value as -n)
 #SBATCH -t 00:02:00
 #SBATCH -p work
+#SBATCH --reservation=DeepNeuron # reservation
 #SBATCH -o array-%A-%a.out    # %A = parent job ID, %a = array index
 #SBATCH -e array-%A-%a.err
 

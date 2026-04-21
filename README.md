@@ -10,8 +10,8 @@ Based on the [HPC Carpentries](https://hpc-carpentry.org) curriculum (CC-BY 4.0)
 After logging into the cluster, clone this repository to your home directory:
 
 ```bash
-git clone https://github.com/YOUR-ORG/hpc-workshop.git
-cd hpc-workshop
+git clone https://github.com/victorolet/deepneuron_carpentries.git
+cd deepneuron_carpentries
 ```
 
 Each numbered folder corresponds to a section of the workshop. Inside you will find:

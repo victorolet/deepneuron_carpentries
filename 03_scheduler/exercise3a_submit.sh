@@ -17,6 +17,7 @@
 #SBATCH -n 1                  # 1 task
 #SBATCH -t 00:02:00           # 2-minute walltime
 #SBATCH -p work               # partition
+#SBATCH --reservation=DeepNeuron # reservation
 #SBATCH -o slurm-%j.out
 #SBATCH -e slurm-%j.err
 

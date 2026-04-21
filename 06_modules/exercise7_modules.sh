@@ -19,14 +19,14 @@
 #SBATCH -n 1
 #SBATCH -t 00:01:00
 #SBATCH -p work
+#SBATCH --reservation=DeepNeuron # reservation
 #SBATCH -o slurm-%j.out
 #SBATCH -e slurm-%j.err
 
 # Always start with a clean slate
 module purge
 
-# EDIT THIS LINE — replace with the full module name from 'module avail Python'
-module load Python/3.11.3-GCCcore-12.3.0
+module load python/3.11.6
 
 # Show what is loaded
 echo "=== Loaded modules ==="

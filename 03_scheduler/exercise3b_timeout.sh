@@ -21,6 +21,7 @@
 #SBATCH -n 1
 #SBATCH -t 00:01:00           # 1-minute walltime — intentionally too short
 #SBATCH -p work
+#SBATCH --reservation=DeepNeuron # reservation
 #SBATCH -o slurm-%j.out
 #SBATCH -e slurm-%j.err
 

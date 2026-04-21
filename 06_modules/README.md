@@ -17,7 +17,7 @@ module avail Python               # filter by name
 module spider Python              # deep search including dependencies (Lmod only)
 module list                       # show currently loaded modules
 module load Python                # load default version
-module load Python/3.11.3-GCCcore-12.3.0   # load specific version (use in scripts)
+module load python/3.11.6   # load specific version (use in scripts)
 which python3                     # confirm path changed
 module unload Python              # remove one module
 module purge                      # remove ALL loaded modules
