@@ -1,0 +1,25 @@
+# Output files from job submissions
+slurm-*.out
+slurm-*.err
+array-*.out
+array-*.err
+scale-*.out
+scale-*.err
+*.out
+*.err
+
+# Generated timing data
+timing.csv
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Editor files
+.vscode/
+*.swp
+*~
+
+# macOS
+.DS_Store
