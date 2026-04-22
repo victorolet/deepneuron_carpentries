@@ -24,8 +24,8 @@
 #SBATCH -e scale-n%t-%j.err
 
 module purge
-module load Python
-module load SciPy-bundle
+module load libfabric/1.22.0
+module load cray-python/3.11.7
 
 echo "=== Scaling study: $SLURM_NTASKS task(s) ==="
 echo "Node: $(hostname)"
@@ -37,7 +37,7 @@ if [ "$SLURM_NTASKS" -eq 1 ]; then
     amdahl
 else
     # Parallel run
-    mpiexec amdahl
+    srun amdahl
 fi
 
 echo ""

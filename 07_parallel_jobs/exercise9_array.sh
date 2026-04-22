@@ -23,8 +23,8 @@
 #SBATCH -e array-%A-%a.err
 
 module purge
-module load Python
-module load SciPy-bundle
+module load cray-python/3.11.7
+module load py-scipy/1.14.1
 
 # Use the array task ID as the number of MPI tasks
 # This overrides Slurm's allocation; mpiexec uses -n explicitly here
@@ -36,5 +36,7 @@ echo "Node: $(hostname)"
 if [ "$N" -eq 1 ]; then
     amdahl -t >> timing.csv       # serial, append CSV row
 else
-    mpiexec -n $N amdahl -t >> timing.csv   # parallel, append CSV row
+    srun -n $N amdahl -t >> timing.csv   # parallel, append CSV row
 fi
+
+

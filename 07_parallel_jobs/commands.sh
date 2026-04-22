@@ -50,3 +50,6 @@ sort -t, -k1 -n timing.csv                 # sort by CPU count
 # real  = wall clock time (what you care about)
 # user  = total CPU time across all processes (≈ n × real for n tasks)
 # sys   = time in kernel operations
+
+# python commands to read to screen
+python3 -c "import csv,sys; [print(r) for r in csv.reader(sys.stdin)]" < timing.csv

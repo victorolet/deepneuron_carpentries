@@ -26,7 +26,7 @@
 # Always start with a clean slate
 module purge
 
-module load python/3.11.6
+module load cray-python/3.11.7
 
 # Show what is loaded
 echo "=== Loaded modules ==="
